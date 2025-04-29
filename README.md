@@ -7,4 +7,5 @@ A expressão final para o espectro é obtida através das aproximações realiza
 2- É assumido que o campo magnético perpendicular é o mesmo em todo o espaço
 
 Os parâmetros do código são: B, N(E), E_gamma, E_c, Emin, Emax
+
 As constantes são: e,h,c,m 
