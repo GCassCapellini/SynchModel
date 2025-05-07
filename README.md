@@ -17,3 +17,17 @@ O código é separado em duas partes:
 2 - Espectro síncrotron: nesta seção calcula-se a emissão síncrotron dada a função de distribuição definida na seção 1.
 
 Em ambos os casos é retornado um array 
+
+## Informações sobre rotinas importadas e funções:
+
+O código utiliza as rotinas matplotlib, numpy, astropy, math e scipy.
+
+O código apresenta as funções: grid, PartDist_PL, sync, integrate. Para mais detalhes sobre cada função veja as suas respectivas seções:
+
+### grid
+
+### PartDist_PL
+
+### sync
+
+### integrate
