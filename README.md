@@ -24,8 +24,17 @@ O código utiliza as rotinas matplotlib, numpy, astropy, math e scipy.
 
 O código apresenta as funções: grid, PartDist_PL, sync, integrate. Para mais detalhes sobre cada função veja as suas respectivas seções:
 
-### grid
-
+### grid(min,max,itrcn):
+  Essa função estabelece uma rede 1D de parâmetros baseado nas especificações dadas.
+  
+  Parâmetros:
+  
+    min [float]: mínimo da rede desejado. Deve ser maior que zero e menor que max
+    
+    max [float]: máximo da rede desejado. Deve ser maior que zero e que min
+    
+    itrcn [int]: número de espaços da rede-1. Corresponde ao número de interações para formar a rede
+    
 ### PartDist_PL
 
 ### sync
