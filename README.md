@@ -34,6 +34,10 @@ O código apresenta as funções: grid, PartDist_PL, sync, integrate. Para mais 
     max [float]: máximo da rede desejado. Deve ser maior que zero e que min
     
     itrcn [int]: número de espaços da rede-1. Corresponde ao número de interações para formar a rede
+
+  Retorna:
+
+    array[numpy.ndarray]: array desejado com unidade igual àquelas definidas em min e max.
     
 ### PartDist_PL
 
