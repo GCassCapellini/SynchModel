@@ -22,7 +22,7 @@ Em ambos os casos é retornado um array
 
 O código utiliza as rotinas matplotlib, numpy, astropy, math e scipy.
 
-O código apresenta as funções: grid, PartDist_PL, sync, integrate. Para mais detalhes sobre cada função veja as suas respectivas seções:
+O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais detalhes sobre cada função veja as suas respectivas seções:
 
 ### grid(min,max,itrcn):
   Essa função estabelece uma rede 1D de parâmetros baseado nas especificações dadas.
@@ -43,4 +43,17 @@ O código apresenta as funções: grid, PartDist_PL, sync, integrate. Para mais 
 
 ### sync
 
-### integrate
+### integral(lim_inf,lim_sup,function,**kwargs):
+  Essa função calcula a integral de uma função utilizando a rotina quad do pacote scipy
+
+  Parâmetros:
+
+    lim_inf [(float,int)]: limite inferior da integral
+
+    lim_sup [(float,int)]: limite superior da integral
+
+    Vale notar que se lim_inf>lim_sup a rotina inverte o sinal da integral automaticamente
+
+    function[callable]: função que deseja interal
+
+    **kwargs: argumentos extras
