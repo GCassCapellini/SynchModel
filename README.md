@@ -39,7 +39,22 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
 
     array[numpy.ndarray]: array desejado com unidade igual àquelas definidas em min e max.
     
-### PartDist_PL
+### PartDist_PL(norm,alpha,array):
+  Essa função calcula a distribuição de partículas considerando uma lei de potência
+
+  $N(E) = N_0 \times E^{-\alpha}$
+
+  Parâmetros:
+
+    norm [(float,int)]: parâmetro de normalização
+
+    alpha [(float,int)]: índice espectral da lei de potência
+
+    array [numpy.ndarray]: array com os valores da variável da função
+
+  Retorna:
+
+    N(E) [numpy.ndarray]: array com o resultado da distribuição de partículas
 
 ### sync
 
