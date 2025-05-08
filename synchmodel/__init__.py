@@ -1,1 +1,3 @@
-from .grid import criar_rede_parametros
+from .grid import grid
+from .PowerLaw import DistPL
+from .integrate import integral
