@@ -2,6 +2,19 @@ from scipy.integrate import quad
 
 #Esta função calcula uma integral de uma função dado um limite inferior e superior 
 def integral(lim_inf,lim_sup,function,**kwargs):
+    """
+    Integrates a generic function using scipy (quad method)
+
+    Parameters:
+
+    lim_inf (float): Integral inferior limit
+    lim_sup (float): Integral superior limit
+    function (callable): Generic function that will integrated
+
+    Return: 
+
+    resultado (float): Result of the integral
+    """
    #checando se as variáveis possuem o tipo correto
     if not isinstance(lim_inf, (float, int)):
         raise TypeError(f"lim_inf deve ser float ou int, mas recebeu {type(lim_inf).__name__}")
