@@ -1,5 +1,5 @@
 # SynchModel
-Este código calcula a emissão sincrotron produzida tendo como base o artigo  	High Energy Astrophysical Phenomena (https://arxiv.org/abs/1202.5949v1).
+Este código calcula a emissão sincrotron produzida tendo como base o artigo  Radiation processes in high-energy astrophysics de Gabriela S. Vila e Felix Aharonian.
 A expressão final para o espectro é obtida através das aproximações realizadas no artigo, em especial:
 
 1 - A função de Bessel é aproximada
