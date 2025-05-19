@@ -58,7 +58,7 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
 
     resultado, erro [float],[float]: resultado da integral calculada e o seu respectivo erro
 
-### sync
+### SynchEm(part_dist,E,Egam,B):
   Essa função calcula a emissão síncrotron dada uma distribuição de partículas, um array de energia dos elétrons e dos fótons e um campo magnético 
 
   Parâmetros:
