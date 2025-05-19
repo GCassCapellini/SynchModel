@@ -76,10 +76,10 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
 
     N(E) [numpy.ndarray]: array com o resultado da distribuição de partículas
 
-###DistPL_plot(norm,alpha,array):
+### DistPL_plot(norm,alpha,array):
 Função para visualização do modelo de distribuição
 
-###ExpCutPL_plot(norm,alpha,array,beta,cut):
+### ExpCutPL_plot(norm,alpha,array,beta,cut):
 Função para visualização do modelo de distribuição
 
 
