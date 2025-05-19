@@ -37,8 +37,10 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
   Retorna:
 
     array[numpy.ndarray]: array desejado com unidade igual àquelas definidas em min e max.
-    
-### PartDist_PL(norm,alpha,array):
+
+## Distribuição de Partículas
+
+### PowerLaw(norm,alpha,array):
   Essa função calcula a distribuição de partículas considerando uma lei de potência
 
   $N(E) = N_0 \times E^{-\alpha}$
@@ -55,7 +57,7 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
 
     N(E) [numpy.ndarray]: array com o resultado da distribuição de partículas
 
-### PartDist_ExpCutPL(norm,alpha,beta,cut):
+### ExpCutOffPL(norm,alpha,beta,cut):
   Essa função calcula a distribuição de partículas considerando uma lei de potência com um cut off exponencial
  
   $N(E) = N_0 \times E^{-\alpha} \times exp(-(E/cut)^\beta)$
@@ -73,6 +75,13 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
   Retorna:
 
     N(E) [numpy.ndarray]: array com o resultado da distribuição de partículas
+
+###DistPL_plot(norm,alpha,array):
+Função para visualização do modelo de distribuição
+
+###ExpCutPL_plot(norm,alpha,array,beta,cut):
+Função para visualização do modelo de distribuição
+
 
 ### sync
   Essa função calcula a emissão síncrotron dada uma distribuição de partículas, um array de energia dos elétrons e dos fótons e um campo magnético 
