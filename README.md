@@ -16,7 +16,6 @@ O código é separado em duas partes:
 
 2 - Espectro síncrotron: nesta seção calcula-se a emissão síncrotron dada a função de distribuição definida na seção 1.
 
-Em ambos os casos é retornado um array 
 
 ## Informações sobre rotinas importadas e funções:
 
