@@ -23,6 +23,7 @@ O código utiliza as rotinas matplotlib, numpy, astropy, math e scipy.
 
 O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais detalhes sobre cada função veja as suas respectivas seções:
 
+## Funções gerais
 ### grid(min,max,itrcn):
   Essa função estabelece uma rede 1D de parâmetros baseado nas especificações dadas.
   
@@ -38,6 +39,43 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
 
     array[numpy.ndarray]: array desejado com unidade igual àquelas definidas em min e max.
 
+### integral(lim_inf,lim_sup,function,**kwargs):
+  Essa função calcula a integral de uma função utilizando a rotina quad do pacote scipy
+
+  Parâmetros:
+
+    lim_inf [(float,int)]: limite inferior da integral
+
+    lim_sup [(float,int)]: limite superior da integral
+
+    Vale notar que se lim_inf>lim_sup a rotina inverte o sinal da integral automaticamente
+
+    function[callable]: função que deseja interal
+
+    **kwargs: argumentos extras
+  
+  Retorna:
+
+    resultado, erro [float],[float]: resultado da integral calculada e o seu respectivo erro
+
+### sync
+  Essa função calcula a emissão síncrotron dada uma distribuição de partículas, um array de energia dos elétrons e dos fótons e um campo magnético 
+
+  Parâmetros:
+
+    part_dist[function]: função da distribuição de partículas
+
+    E [np.ndarray]: array com os valores da energia dos elétrons
+
+    Egam [np.ndarray]: array com os valores da energia dos fótons
+
+    B [float]: valor do campo magnético
+
+  Retorna:
+
+    L [np.ndarray]: array da luminosidade síncrotron produzida
+
+  
 ## Distribuição de Partículas
 
 ### PowerLaw(norm,alpha,array):
@@ -81,42 +119,3 @@ Função para visualização do modelo de distribuição
 
 ### ExpCutPL_plot(norm,alpha,array,beta,cut):
 Função para visualização do modelo de distribuição
-
-
-### sync
-  Essa função calcula a emissão síncrotron dada uma distribuição de partículas, um array de energia dos elétrons e dos fótons e um campo magnético 
-
-  Parâmetros:
-
-    part_dist[function]: função da distribuição de partículas
-
-    E [np.ndarray]: array com os valores da energia dos elétrons
-
-    Egam [np.ndarray]: array com os valores da energia dos fótons
-
-    B [float]: valor do campo magnético
-
-  Retorna:
-
-    L [np.ndarray]: array da luminosidade síncrotron produzida
-
-    
-
-### integral(lim_inf,lim_sup,function,**kwargs):
-  Essa função calcula a integral de uma função utilizando a rotina quad do pacote scipy
-
-  Parâmetros:
-
-    lim_inf [(float,int)]: limite inferior da integral
-
-    lim_sup [(float,int)]: limite superior da integral
-
-    Vale notar que se lim_inf>lim_sup a rotina inverte o sinal da integral automaticamente
-
-    function[callable]: função que deseja interal
-
-    **kwargs: argumentos extras
-  
-  Retorna:
-
-    resultado, erro [float],[float]: resultado da integral calculada e o seu respectivo erro
