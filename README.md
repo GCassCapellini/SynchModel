@@ -56,7 +56,43 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
 
     N(E) [numpy.ndarray]: array com o resultado da distribuição de partículas
 
+### PartDist_ExpCutPL(norm,alpha,beta,cut):
+  Essa função calcula a distribuição de partículas considerando uma lei de potência com um cut off exponencial
+ 
+  $N(E) = N_0 \times E^{-\alpha} \times exp(-(E/cut)^\beta)$
+
+  Parâmetros:
+
+    norm [(float,int)]: parâmetro de normalização
+
+    alpha [(float,int)]: índice espectral da lei de potência
+
+    beta [(float,int)]: índice do cut off exponencial
+
+    cut [float]: valor de corte da exponencial
+
+  Retorna:
+
+    N(E) [numpy.ndarray]: array com o resultado da distribuição de partículas
+
 ### sync
+  Essa função calcula a emissão síncrotron dada uma distribuição de partículas, um array de energia dos elétrons e dos fótons e um campo magnético 
+
+  Parâmetros:
+
+    part_dist[function]: função da distribuição de partículas
+
+    E [np.ndarray]: array com os valores da energia dos elétrons
+
+    Egam [np.ndarray]: array com os valores da energia dos fótons
+
+    B [float]: valor do campo magnético
+
+  Retorna:
+
+    L [np.ndarray]: array da luminosidade síncrotron produzida
+
+    
 
 ### integral(lim_inf,lim_sup,function,**kwargs):
   Essa função calcula a integral de uma função utilizando a rotina quad do pacote scipy
@@ -72,3 +108,7 @@ O código apresenta as funções: grid, PartDist_PL, sync, integral. Para mais d
     function[callable]: função que deseja interal
 
     **kwargs: argumentos extras
+  
+  Retorna:
+
+    resultado, erro [float],[float]: resultado da integral calculada e o seu respectivo erro
